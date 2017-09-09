@@ -1,7 +1,25 @@
 ### latino-redis
-Libreria dinamica para manejo de redis en [latino](https://github.com/primitivorm/latino)
+Librería dinámica para manejo de redis en [latino](https://github.com/primitivorm/latino)
 
-##### Uso en codigo latino
+#### Prerequisitos
+Tener instalado [latino](https://github.com/primitivorm/latino)
+Tener instalado [redis-server](http://packages.ubuntu.com/search?keywords=redis-server)
+
+### Instalación
+##### linux
+```
+git clone https://github.com/primitivorm/latino-redis
+cd latino-redis
+git submodule update --init --recursive
+sudo chmod +x instalar.sh
+sudo bash instalar.sh
+```
+
+#### Dependecias
+[hiredis](https://github.com/redis/hiredis)
+[redis-server](http://packages.ubuntu.com/search?keywords=redis-server)
+
+##### Uso de esta librería en código latino
 ```
 /*
 #instalar redis-server en ubuntu
@@ -79,21 +97,4 @@ poner("PING:\t\t"..ping)
 redis.desconectar(conexion)
 ```
 
-##### Prerequisitos
-Tener instalado [latino](https://github.com/primitivorm/latino)
-Tener instalado [redis-server](http://packages.ubuntu.com/search?keywords=redis-server)
-
-### Instalacion
-##### linux
-```
-$git clone https://github.com/primitivorm/latino-redis
-$cd latino-redis
-$git submodule update --init --recursive
-$sudo ./instalar.sh
-```
-
-##### Dependecias
-[hiredis](https://github.com/redis/hiredis)
-[redis-server](http://packages.ubuntu.com/search?keywords=redis-server)
-
-##### Cualquier aportacion o sugerencia es bienvenida
+##### Cualquier aportación o sugerencia es bienvenida

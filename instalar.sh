@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+apt-get install redis-server libhiredis-dev
 rm CMakeCache.txt
 PREFIX=/usr
 cd hiredis
